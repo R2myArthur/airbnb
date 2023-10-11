@@ -1,2 +1,14 @@
-<app-header></app-header>
-<div class="background"></div>
+<div class="bodyComponent">
+    <div class="accomadation_type"></div>
+
+    <div class="search_bar">
+        <input type="text">
+    </div>
+    <div class="accomodations">
+        <ng-container *ngIf="cardItems$ | async as cards">    
+            <div *ngFor="let card of cards" class="bodyCard">
+                <app-accomodation [accomodation]=card></app-accomodation>
+            </div>
+        </ng-container>
+    </div>
+</div>

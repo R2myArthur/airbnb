@@ -1,7 +1,32 @@
-.background{
-    // background-image:url("../../../assets/images/001_hero-bg.webp");
-    background-color: antiquewhite;
-    position: absolute;
+
+.bodyComponent{
     width: 100%;
-    height: 100%;
+    padding-top: 60px;
+    margin-left: 6%;
+    margin-right: 6%;
+    .accomodations{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .bodyCard{
+            width:22%;
+            height:22%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .bodyCard:focus {
+            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+    
+        .bodyCard:hover {
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+            transform: translateY(-1px);
+        }
+    
+        .bodyCard:active {
+            box-shadow: #D6D6E7 0 3px 7px inset;
+            transform: translateY(1px);
+        }
+    }
 }

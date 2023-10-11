@@ -1,7 +1,8 @@
 export interface Logement {
     id: number;
+    image?: HTMLImageElement;
     city: {
-        zipCOde: number;
+        zipCode: number;
         name: string;
     }
     price: number;
