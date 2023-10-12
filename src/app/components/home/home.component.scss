@@ -4,19 +4,21 @@
     padding-top: 90px;
     margin-left: 5%;
     margin-right: 5%;
+    //max-width: 1300px;
 
     .accomodations{
         margin-top: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
         .bodyCard{
             width:22%;
             height:22%;
             border-radius: 10px;
             cursor: pointer;
         }
-        .bodyCard:focus {
+        /*.bodyCard:focus {
             box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
         }
     
@@ -28,6 +30,6 @@
         .bodyCard:active {
             box-shadow: #D6D6E7 0 3px 7px inset;
             transform: translateY(1px);
-        }
+        }*/
     }
 }

@@ -1,9 +1,12 @@
 
 <div class="accommodation">
-    <div class="img">
-        <a href="http://localhost:4200/{{accomodation.id}}">
-            <img src="data:image/png;base64,{{accomodation.image}}" alt="" class="image"/>
-        </a>
+    <div class="img"
+    [style.background-image]="'url(' + imageWithPrefix + ')'"
+    [style.backgroundSize]="backgroundSize">
+        <!-- <a href="http://localhost:4200/{{accomodation.id}}">
+            <img src="data:image/png;base64,{{accomodation.image}}" alt="" class="image">
+        </a> -->
+        
     </div>
     <div class="firstLine">
         <div class="city"> <p> {{accomodation.city.name}} </p> </div>

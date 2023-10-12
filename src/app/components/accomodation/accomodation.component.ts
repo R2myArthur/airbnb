@@ -8,10 +8,14 @@ import { Logement } from 'src/app/models/Logement';
 })
 export class AccomodationComponent implements OnInit {
   @Input() accomodation: Logement;
+  imageWithPrefix: string;
+  backgroundSize: string;
 
   ngOnInit(): void{
     const url = "http://localhost:3000/api/accomodations"
-    // this.cardItems$  = this.http.get<Array<Logement>>(url);
+    this.imageWithPrefix = 'data:image/jpeg;base64,' + this.accomodation.image;
+    this.backgroundSize = 'cover';
+    //this.cardItems$  = this.http.get<Array<Logement>>(url);
     console.log(this.accomodation);
   }
 }
