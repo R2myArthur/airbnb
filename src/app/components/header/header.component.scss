@@ -8,16 +8,15 @@
     width: 100%; /* Largeur du bouton */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 5% ; /* Espacement intérieur */
-    background-color: whitesmoke;
+    border-bottom: 1px solid grey; 
 
     .headerLogo {
         display: flex;
         align-items: center;
         width: 15%; /* Largeur du bouton de globe */
 
-        background-color: #ee2727; /* Couleur de fond du header */
         // .logo {
         //     cursor: pointer;
         //     margin-right: 10px; /* Espacement entre le logo et la barre de recherche */
@@ -27,7 +26,6 @@
     
 
     .searchBar {
-        background-color: aqua;
         // flex-grow: 1;
         // margin: 0 200px; /* Espacement autour de la barre de recherche */
         border: 1px solid #e0e0e0; /* Bordure grise */
@@ -82,18 +80,14 @@
             /* Ajoutez ici la définition de la couleur de l'icône de recherche */
         }
     }
-    
-            
 
-
-    
     .navBar {
         display: flex;
-        // margin-left: 5%;
+        margin-right: 10%;
         align-items: center;
-        justify-content: center;
-        width: 30%; /* Largeur du bouton de globe */
-        background-color: rgb(17, 0, 255);
+        justify-content: space-evenly;
+        width: 30%; /* Largeur d*/
+        height: 50%;
 
         .signUp{
             background-color: #fff;
@@ -101,31 +95,33 @@
             height: 100%;
             font-weight: bold;
             border: none;
-            margin-right: 10px;
-            
-    
+            margin-right: 2%;   
+            cursor: pointer; 
         }
 
         .globeButton {
-            background-color: blue;
+            // background-color: blue;
             display : flex;
-            margin-right: 50px; /* Espacement entre les éléments de navigation */
+            // margin-right: 2%; /* Espacement entre les éléments de navigation */
             /* Ajoutez ici la définition de la couleur et de l'icône de globe */
             background-color: white;
             border: none;
-
+            cursor: pointer;
             .globe {
                 width: 4 rem;
             }
-
-
         }
     
         .connexion{
-            background-color: red;
-            width: 10%;
-            height: 10%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20%;
+            height: 100%;
+            padding-right:1rem;
             border: none;
+            border-radius: 100px; /* Coins arrondis */
+            cursor: pointer;
         }
     }
 }
