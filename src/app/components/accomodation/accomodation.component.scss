@@ -1,0 +1,34 @@
+.accommodation{
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    .image{
+        width:70%;
+        height:30%;
+    }
+    .firstLine{
+        display: flex;
+        flex-wrap: wrap;
+        .city{
+            background-color: aqua;
+            height: 100%;
+            width: 50%;
+        }
+        .star{
+            background-color: brown;
+            display: flex;
+            height: 5%;
+            width: 5%;
+        }
+        .rating{
+            background-color: palevioletred;
+            height: 100%;
+            width: 10%;
+        }
+    }
+    .heart{
+        height: 5%;
+        width: 5%;
+
+    }
+}
