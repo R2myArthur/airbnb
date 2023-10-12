@@ -1,15 +1,16 @@
 
 <div class="accommodation">
-    <a href="http://localhost:4200/{{accomodation.id}}">
-        <img src="data:image/png;base64,{{accomodation.image}}" alt="" class="image" style="width:70%;height:auto"/>
-        
-    </a>
+    <div class="img">
+        <a href="http://localhost:4200/{{accomodation.id}}">
+            <img src="data:image/png;base64,{{accomodation.image}}" alt="" class="image"/>
+        </a>
+    </div>
     <div class="firstLine">
         <div class="city"> <p> {{accomodation.city.name}} </p> </div>
         <img src="../../../assets/img/star.svg" alt="logo star" class="star"/>
-        <div class="rating"> <p> {{accomodation.rating}}/5 </p> </div>
+        <div class="rating"> <p> {{accomodation.rating}} </p> </div>
     </div>
-    <p> {{accomodation.price}} € / nuit</p>
-    <p> {{accomodation.favourite}}</p>
+    <p style="color:rgb(91, 91, 91)"> Particulier</p>
+    <p> <b>{{accomodation.price}} €</b> / nuit</p>
     <img src="../../../assets/img/heart.svg" alt="heart" class="heart"/>
 </div>

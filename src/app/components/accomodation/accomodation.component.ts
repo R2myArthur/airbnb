@@ -1,4 +1,4 @@
-import { Component, Input, OnInit,  } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Logement } from 'src/app/models/Logement';
 
 @Component({
@@ -14,5 +14,4 @@ export class AccomodationComponent implements OnInit {
     // this.cardItems$  = this.http.get<Array<Logement>>(url);
     console.log(this.accomodation);
   }
-
 }

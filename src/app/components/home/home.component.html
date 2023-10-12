@@ -2,13 +2,21 @@
     <div class="accomadation_type"></div>
 
     <div class="search_bar">
-        <input type="text">
+        <input type="text" (keyup)="onKey($event)">
+    </div>
+    <div class="test">
+        <ng-container *ngIf="city$ | async as cities">    
+            <div *ngFor="let city of cities" class="city">
+                <h1 (click)="onClickCity(city)">{{city.nom}}</h1>
+            </div>
+        </ng-container>
     </div>
     <div class="accomodations">
-        <ng-container *ngIf="cardItems$ | async as cards">    
-            <div *ngFor="let card of cards" class="bodyCard">
+        <ng-container *ngIf="cardItemsFilter">    
+            <div *ngFor="let card of cardItemsFilter" class="bodyCard">
                 <app-accomodation [accomodation]=card></app-accomodation>
             </div>
         </ng-container>
     </div>
+    
 </div>

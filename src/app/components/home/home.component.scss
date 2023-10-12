@@ -1,17 +1,18 @@
 
 .bodyComponent{
     width: 100%;
-    padding-top: 60px;
-    margin-left: 6%;
-    margin-right: 6%;
+    padding-top: 90px;
+    margin-left: 5%;
+    margin-right: 5%;
+
     .accomodations{
+        margin-top: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         .bodyCard{
             width:22%;
             height:22%;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 10px;
             cursor: pointer;
         }

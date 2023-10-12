@@ -1,5 +1,6 @@
 export interface City{
-    
+    codesPostaux: Array<string>;
+    nom: string;
 }
 // Pour al recherche de la ville aide à faire le filtre avec une fonction sur les champs de recherche du header
 // getCitiesByName(city<string>):Observable...AbortController[array<city>{
