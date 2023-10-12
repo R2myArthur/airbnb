@@ -1,6 +1,5 @@
 
 .headerComponent {
-    background-color: #fff; /* Couleur de fond du header */
     position: fixed;
     top: 0;
     left: 0;
@@ -10,13 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 80px; /* Espacement intérieur */
+    padding: 0 5% ; /* Espacement intérieur */
+    background-color: whitesmoke;
 
     .headerLogo {
         display: flex;
         align-items: center;
-        width: 25%; /* Largeur du bouton de globe */
+        width: 15%; /* Largeur du bouton de globe */
 
+        background-color: #ee2727; /* Couleur de fond du header */
         // .logo {
         //     cursor: pointer;
         //     margin-right: 10px; /* Espacement entre le logo et la barre de recherche */
@@ -26,7 +27,8 @@
     
 
     .searchBar {
-        flex-grow: 1;
+        background-color: aqua;
+        // flex-grow: 1;
         // margin: 0 200px; /* Espacement autour de la barre de recherche */
         border: 1px solid #e0e0e0; /* Bordure grise */
         width: 40%; /* Largeur du bouton */
@@ -35,23 +37,30 @@
         align-items: center;
         justify-content: center;
         padding: 10px 10px; /* Espacement intérieur */
-
+        ::placeholder{
+            color: black;
+        }
         .searchWhere {
-            font-family: 'Nunito', sans-serif; 
+            /*font-family: 'Nunito', sans-serif;*/ 
             font-weight: bold;
-            border:none; 
+            width: 50%;
+            height: 100%;
+            font-weight: bold;
+            border: none;
+            border-right: 1px solid grey; 
+            // background-color: red; 
         }
         .searchWhen{
-            font-family: 'Nunito', sans-serif; 
+            /*font-family: 'Nunito', sans-serif; */
+            /*color: black;*/
+
             font-weight: bold;
             border:none; 
-
+    
         }
-        
             //font-family: 'Nunito', sans-serif; 
             //font-weight: bold;
         
-
         .searchGuest {
             cursor: pointer;
             margin-right: 5px; /* Espacement entre les éléments de recherche */
@@ -73,46 +82,51 @@
             /* Ajoutez ici la définition de la couleur de l'icône de recherche */
         }
     }
-        .searchWhere{
-            background-color: #ff385c;
-        }
-        .login {
-        display: flex;
-        margin-right: 5px;
-        align-items: center;
-        justify-content: flex-end;
-        width: 10%; /* Ajustez la largeur du composant de connexion */
-        
-    .loginButton {
-        background-color: #ff385c; /* Couleur de fond du bouton de connexion */
-        color: #fff; /* Couleur du texte du bouton de connexion */
-        cursor: pointer;
-        padding: 10px 20px; /* Espacement intérieur du bouton */
-        border: none;
-        border-radius: 5px;
-        }
+    
+            
+
+
+    
     .navBar {
         display: flex;
-        margin-left: 5%;
+        // margin-left: 5%;
         align-items: center;
+        justify-content: center;
         width: 30%; /* Largeur du bouton de globe */
-        /*background-color: red;*/
+        background-color: rgb(17, 0, 255);
 
+        .signUp{
+            background-color: #fff;
+            width: 50%;
+            height: 100%;
+            font-weight: bold;
+            border: none;
+            margin-right: 10px;
+            
+    
+        }
 
-        .globeButton globe{
+        .globeButton {
             background-color: blue;
             display : flex;
-            height:35px; /* Hauteur du bouton de globe */
             margin-right: 50px; /* Espacement entre les éléments de navigation */
             /* Ajoutez ici la définition de la couleur et de l'icône de globe */
+            background-color: white;
+            border: none;
 
             .globe {
                 width: 4 rem;
             }
-        }
 
 
-            }
         }
     
+        .connexion{
+            background-color: red;
+            width: 10%;
+            height: 10%;
+            border: none;
+        }
     }
+}
+    
