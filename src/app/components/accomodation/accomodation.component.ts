@@ -7,7 +7,9 @@ import { Logement } from 'src/app/models/Logement';
   styleUrls: ['./accomodation.component.scss']
 })
 export class AccomodationComponent implements OnInit {
+  
   @Input() accomodation: Logement;
+
   imageWithPrefix: string;
   backgroundSize: string;
 
@@ -15,7 +17,5 @@ export class AccomodationComponent implements OnInit {
     const url = "http://localhost:3000/api/accomodations"
     this.imageWithPrefix = 'data:image/jpeg;base64,' + this.accomodation.image;
     this.backgroundSize = 'cover';
-    //this.cardItems$  = this.http.get<Array<Logement>>(url);
-    console.log(this.accomodation);
   }
 }

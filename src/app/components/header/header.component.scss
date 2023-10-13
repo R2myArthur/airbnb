@@ -11,6 +11,7 @@
     justify-content: space-between;
     padding: 0 5% ; /* Espacement intérieur */
     border-bottom: 1px solid grey; 
+    background-color: white;
 
     .headerLogo {
         display: flex;
@@ -38,7 +39,7 @@
         ::placeholder{
             color: black;
         }
-        .searchWhere {
+        .searchWhereInput {
             /*font-family: 'Nunito', sans-serif;*/ 
             font-weight: bold;
             width: 50%;
@@ -46,7 +47,24 @@
             font-weight: bold;
             border: none;
             border-right: 1px solid grey; 
-            // background-color: red; 
+            outline: none;
+            
+        }
+        .cities {
+            transform: translateY(50%);
+            position: absolute;
+            max-height: 40vh;
+            overflow: scroll;
+            background-color: white !important;
+            h1 {
+                padding: 1rem;
+                font-size: 1rem;
+                &:hover {
+                    border-radius: 8px;
+                    background-color: rgb(219, 126, 79);
+                    color: white;
+                }
+            }
         }
         .searchWhen{
             /*font-family: 'Nunito', sans-serif; */
@@ -125,4 +143,3 @@
         }
     }
 }
-    
