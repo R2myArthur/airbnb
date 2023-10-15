@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { City } from 'src/app/models/City';
 import { Logement } from 'src/app/models/Logement';
-import { GeoApiService } from 'src/app/service/geo-api.service';
 
 @Component({
   selector: 'app-home',
@@ -15,8 +14,7 @@ export class HomeComponent implements OnInit {
   cardItemsFilter: Array<Logement>; // Données filtrée avec la bar de recherche
   city$: Observable<Array<City>>;
 
-  constructor(private http: HttpClient, 
-    private service:GeoApiService,
+  constructor(private http: HttpClient,
     private route: ActivatedRoute) {
     }
 
@@ -34,5 +32,5 @@ export class HomeComponent implements OnInit {
         }
       })
     });
-  }
+  } 
 }

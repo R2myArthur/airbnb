@@ -1,22 +1,16 @@
 .accommodation{
-    background-color: white;
-    width: 330px;
-    height: 370px;
-    padding-left: 2%;
-    margin: 25px;
+    width: 100%;
+    height: 100%;
     .img{
-        height: 90%;
-        width: auto;
-        display: flex;
-        justify-content: center;
+        height: 21vw;
+        width: 21vw;
         .image{
             width:100%;
             height:100%;
-             border-radius: 5%;
+            border-radius: 5%;
+            object-fit: cover;
          }
         padding-bottom: 2%;
-        border-radius: 20px 10px; /* Coins supérieurs arrondis à 20px, coins inférieurs à 10px */
-
     }
     .firstLine{
         display: flex;

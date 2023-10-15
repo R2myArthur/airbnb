@@ -17,18 +17,10 @@
         display: flex;
         align-items: center;
         width: 15%; /* Largeur du bouton de globe */
-
-        // .logo {
-        //     cursor: pointer;
-        //     margin-right: 10px; /* Espacement entre le logo et la barre de recherche */
-        //     /* Ajoutez ici la définition de la taille et de la couleur de votre logo */
-        // }
     }
     
 
     .searchBar {
-        // flex-grow: 1;
-        // margin: 0 200px; /* Espacement autour de la barre de recherche */
         border: 1px solid #e0e0e0; /* Bordure grise */
         width: 40%; /* Largeur du bouton */
         border-radius: 100px; /* Coins arrondis */
@@ -51,7 +43,7 @@
             
         }
         .cities {
-            transform: translateY(50%);
+            transform: translateY(60%);
             position: absolute;
             max-height: 40vh;
             overflow: scroll;
@@ -61,21 +53,15 @@
                 font-size: 1rem;
                 &:hover {
                     border-radius: 8px;
-                    background-color: rgb(219, 126, 79);
+                    background-color: rgb(242, 101, 101);
                     color: white;
                 }
             }
         }
         .searchWhen{
-            /*font-family: 'Nunito', sans-serif; */
-            /*color: black;*/
-
             font-weight: bold;
-            border:none; 
-    
+            border:none;
         }
-            //font-family: 'Nunito', sans-serif; 
-            //font-weight: bold;
         
         .searchGuest {
             cursor: pointer;
@@ -87,7 +73,6 @@
             display: flex;
             align-items: center;
             width: 25%; /* Largeur du bouton de globe */
-            //background-color: #ff385c; /* Couleur de fond du bouton */
             cursor: pointer;
             width: 30px; /* Largeur du bouton */
             height: 30px; /* Hauteur du bouton */
@@ -104,7 +89,7 @@
         margin-right: 10%;
         align-items: center;
         justify-content: space-evenly;
-        width: 30%; /* Largeur d*/
+        width: 30%;
         height: 50%;
 
         .signUp{
@@ -120,7 +105,6 @@
         .globeButton {
             // background-color: blue;
             display : flex;
-            // margin-right: 2%; /* Espacement entre les éléments de navigation */
             /* Ajoutez ici la définition de la couleur et de l'icône de globe */
             background-color: white;
             border: none;

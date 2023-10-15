@@ -24,18 +24,19 @@ export class HeaderComponent implements OnInit {
   
   // Evènement sur la barre de recherche
   onKeyCity(event: any) {
-    console.log(event.target.value);
     this.city$ = this.service.getCitiesByName(event.target.value);
-    this.city$.subscribe(city=>console.log(city))
 
     if (event.target.value) {
       this.showCitylist = true;
+    }
+    else {
+      // Ne plus afficher la liste déroulante si il n'y a rien dans l'Input
+      this.showCitylist = false;
     }
   }
   
   // Lors du clic sur la ville choisie mettre la donnée de la ville dans l'URL qui sera récupéré par le  
   onClickCity(city:City){
-    console.log("click city");
     this.showCitylist = false;
     this.router.navigate(['home'], {queryParams: {city: city.nom}})
   }

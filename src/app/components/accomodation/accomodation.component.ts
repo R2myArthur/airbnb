@@ -10,12 +10,8 @@ export class AccomodationComponent implements OnInit {
   
   @Input() accomodation: Logement;
 
-  imageWithPrefix: string;
-  backgroundSize: string;
+  constructor() {}
 
   ngOnInit(): void{
-    const url = "http://localhost:3000/api/accomodations"
-    this.imageWithPrefix = 'data:image/jpeg;base64,' + this.accomodation.image;
-    this.backgroundSize = 'cover';
   }
 }
