@@ -1,3 +1,4 @@
+/* Modèle de structure récupéré depuis le backend (centrale-api-airbnb), les noms doivent être identique à ceux de la base de donnée */
 export interface Logement {
     id: number;
     image: string;

@@ -1,11 +1,12 @@
 <div class="bodyComponent">
-    <div class="accomadation_type"></div>
     <div class="accomodations">
-        <ng-container *ngIf="cardItemsFilter">    
+        <!-- Si des données dans la variables alors afficher les données -->
+        <ng-container *ngIf="cardItemsFilter">   
+             <!-- On veut afficher chaque logement au format défini du composant 'accomodation' -->
             <div *ngFor="let card of cardItemsFilter" class="bodyCard">
-                <app-accomodation [accomodation]=card></app-accomodation>
+                <!-- transmettre les données de l'élément en entrée du composant enfant -->
+                <app-accomodation [accomodation]=card></app-accomodation> 
             </div>
         </ng-container>
     </div>
-    
 </div>

@@ -1,6 +1,7 @@
 
 .headerComponent {
     position: fixed;
+    z-index: 1; // Affichage au premier plan
     top: 0;
     left: 0;
     right: 0;
@@ -32,7 +33,6 @@
             color: black;
         }
         .searchWhereInput {
-            /*font-family: 'Nunito', sans-serif;*/ 
             font-weight: bold;
             width: 50%;
             height: 100%;
@@ -66,7 +66,6 @@
         .searchGuest {
             cursor: pointer;
             margin-right: 5px; /* Espacement entre les éléments de recherche */
-            /* Ajoutez ici la définition de la taille et de la couleur de ces éléments */
         }
 
         .Magnifier {
@@ -80,7 +79,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* Ajoutez ici la définition de la couleur de l'icône de recherche */
         }
     }
 

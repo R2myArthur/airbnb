@@ -1,8 +1,7 @@
+/* Modèle de structure de donnée utilisé pour la récupération de données depuis le service de Geo.gouv.
+    Attention à bien respecter les noms des paramètres de la structure deo.gouv
+*/
 export interface City{
     codesPostaux: Array<string>;
     nom: string;
 }
-// Pour al recherche de la ville aide à faire le filtre avec une fonction sur les champs de recherche du header
-// getCitiesByName(city<string>):Observable...AbortController[array<city>{
-//     return this.httpclient.get<Array<city>>("https://geo.api.gouv.fr/communes{$city}")
-// }

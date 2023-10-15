@@ -1,10 +1,14 @@
+<!-- Header divisé en 3 parties : logo, barre de recherche, barre de navigation -->
 <div class="headerComponent">
+  <!-- Revenir à la page d'accueil lors de l'appuie sur le logo airbnb -->
   <a href="/home">
     <div class="headerLogo">
       <img class="logo" src="../../../assets/img/logo_name.svg" alt="logo SVG" />
     </div>
   </a>
+
   <div class="searchBar">
+    <!-- Récupérer le texte du écrit dans la barre de recherche du lieu sur un évènement de relachement d'une touche clavier -->
     <input
       class="searchWhereInput"
       type="text"
@@ -13,12 +17,14 @@
       placeholder="N'importe où"
       (keyup)="onKeyCity($event)"
     />
+    <!-- Afficher dans un menu déroulant les villes qui sont proposé par l'api gouvernementale -->
     <div class="cities" *ngIf="showCitylist">
       <h1
         (click)="onClickCity(city)"
         *ngFor="let city of city$ | async"
       >{{city.nom}}</h1>
     </div>
+    <!-- recherche par date, non fonctionnel -->
     <div class="searchDate">
       <input
         class="searchWhen"
@@ -28,6 +34,7 @@
         placeholder="Une semaine"
       />
     </div>
+    <!-- Filtrer par un nombre d'invités maximum. Non fonctionnel -->
     <div class="searchGuest">
       <input
         class="searchGuest"
@@ -37,10 +44,13 @@
         placeholder="Ajouter des voyageurs"
       />
     </div>
+    <!-- lance la recherche après avoir renseigné les filtres. Non fonctionnel -->
     <div class="Magnifier div">
       <img class="Magnifier" src="../../../assets/img/loupe.png" alt="Loupe" />
     </div>
   </div>
+
+  <!-- Barre de navigation pour changer la langue ou accéder à un menu de navigation. Non fonctionnel. -->
   <div class="navBar">
     <button class="signUp" type="button">Mettre mon logement sur Airbnb</button>
     <button class="globeButton" type="button">

@@ -1,6 +1,7 @@
-
+<!-- Les données {{accomodation.xxxx}} correspondent aux données envoyées par le composant parent -->
 <div class="accommodation">
     <div class="img">
+        <!-- Lors du clic sur l'image, on est redirigé vers la page de détail du logement -->
         <a href="/detail/{{accomodation.id}}">
             <img src="data:image/png;base64,{{accomodation.image}}" alt="" class="image">
         </a>
@@ -11,6 +12,10 @@
         <div class="rating"> <p> {{accomodation.rating}} </p> </div>
     </div>
     <p style="color:rgb(91, 91, 91)"> Particulier</p>
-    <p> <b>{{accomodation.price}} €</b> / nuit</p>
+    <p> <b>{{accomodation.price}} €</b> par nuit</p>
+
+    <!-- Le coeur devra être affiché sur l'image et sera gris si le paramètre accomodation.favourite = false sinon il sera rouge
+    Il sera cliquable et changera l'état du coeur. Cette donnée sera envoyé directement sur le back avec l'information via un post avec ID du logement plus valeur favourite
+    Attention il faudra créer la requête sur le backend. -->
     <img src="../../../assets/img/heart.svg" alt="heart" class="heart"/>
 </div>

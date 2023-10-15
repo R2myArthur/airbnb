@@ -1,16 +1,22 @@
 
 .bodyComponent{
+    padding-top: 100px; // décaler de la taille du header + petite marge
+    
+    // Taille totale doit être de 100% avec les marges
     width: 90%;
-    padding-top: 90px;
     margin-left: 5%;
     margin-right: 5%;
 
     .accomodations{
-        margin-top: 2%;
+        // Afficher en quadrillage avec les éléments le plus espacé possible
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        // Rajouter un espace entre chaque ligne de la grille
         row-gap: 1rem;
+
+        // Dimensions de chaque container de logement
         .bodyCard{
             width: 21vw;
             height:27vw;

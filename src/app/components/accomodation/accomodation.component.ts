@@ -6,12 +6,9 @@ import { Logement } from 'src/app/models/Logement';
   templateUrl: './accomodation.component.html',
   styleUrls: ['./accomodation.component.scss']
 })
-export class AccomodationComponent implements OnInit {
+export class AccomodationComponent {
   
   @Input() accomodation: Logement;
 
   constructor() {}
-
-  ngOnInit(): void{
-  }
 }
