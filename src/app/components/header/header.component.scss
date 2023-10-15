@@ -34,7 +34,7 @@
         }
         .searchWhereInput {
             font-weight: bold;
-            width: 50%;
+            width: 30%;
             height: 100%;
             font-weight: bold;
             border: none;
@@ -61,11 +61,15 @@
         .searchWhen{
             font-weight: bold;
             border:none;
+            width: 100%;
         }
         
-        .searchGuest {
-            cursor: pointer;
-            margin-right: 5px; /* Espacement entre les éléments de recherche */
+        .searchGuestInput {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-left: 1px solid grey; 
+            outline: none;
         }
 
         .Magnifier {
