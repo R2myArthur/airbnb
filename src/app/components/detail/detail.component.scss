@@ -1,0 +1,228 @@
+.bodyComponent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.accommodation-title h1 {
+    font-family: 'Mundial Light', sans-serif;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.firstdetails {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+
+    .left-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: 0; 
+        font-family: 'Roboto', sans-serif; /* Définir la police Roboto */
+        font-size: 85%;
+
+
+        .Comments {
+            font-weight: normal;
+            display: flex;
+            text-decoration: underline;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            color: black;
+            
+            ::placeholder{
+                color: black;   }
+        }
+
+        .Superhotes {
+            display: flex;
+            align-items: center;
+            width: 1%;
+            margin: 0; 
+        }
+
+        .location {
+            text-decoration: underline; 
+        }
+        
+    
+    }
+
+    .right-section {
+        display: flex;
+        align-items: center;
+        margin-left: auto; 
+
+        .partage{
+                max-height: 16px; 
+                
+            }
+            
+        .save{
+                max-height: 16px; 
+                margin-left: 10%;
+        }
+    
+        .options {
+            background-color: #fff;
+            display: flex;
+            border-radius: 50%;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px; 
+            text-decoration: underline;
+            border: none;
+
+         }
+    }
+
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    margin-top: 2%;
+}
+.accommodation-details
+{
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    .profil{
+        max-height: 2%; 
+        margin-left: 10%;
+    }
+    
+}
+
+.more-details
+{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 55%;
+    font-weight: normal;
+}
+
+.listing-details-right {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+}
+
+.listing-details-right h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.reste {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.price-amount {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.others {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+}
+
+.booking-controls {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .arrival-button{
+        text-align: center;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px 20px; 
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+
+    .guests-button{
+        text-align: left;
+        border-radius: 10px;
+        padding: 5px 10px; 
+        font-size: 10px; 
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 100%; 
+    }
+
+    .reserve-button {
+        background-color: #FF385C; 
+        color: white; 
+        border: none; 
+        border-radius: 10px; 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer;
+        width: 100%; 
+
+    }
+    
+    
+}
