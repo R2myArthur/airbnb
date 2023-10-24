@@ -1,3 +1,7 @@
+/*Cette section définit les styles la classe "bodyComponent". 
+Je le fixe en position, occupe tout l'espace de la fenêtre du navigateur (en hauteur et en largeur), 
+ajoute un espacement de 10% sur les bords et organise son contenu en colonnes avec l'alignement en haut.*/
+
 .bodyComponent {
     position: fixed;
     top: 0;
@@ -10,12 +14,23 @@
     justify-content: flex-start;
 }
 
+/*Ici, les styles ciblent les éléments <h1>
+ à l'intérieur de l'élément avec la classe "accommodation-title". 
+Définition de la police de caractères, suppression des marges et les espacements par défaut.
+J'organise aussi le contenu en utilisant la flexibilité.*/
+
 .accommodation-title h1 {
     font-family: 'Mundial Light', sans-serif;
     display: flex;
     padding: 0;
     margin: 0;
 }
+
+/*Ces styles sont appliqués à la classe "firstdetails" et à ses enfants. 
+L'élément "firstdetails" utilise une police en gras, aligne son contenu horizontalement 
+avec un espacement vertical de 1% (choisi pour être le plus ressemblant à la page d'airbnb.
+Il contient deux sections, "left-section" et "right-section", chacune avec ses propres styles pour,
+comme leur nom l'indique, la partie droite et la partie gauche.*/
 
 .firstdetails {
     font-weight: bold;
@@ -88,8 +103,9 @@
 
          }
     }
-
 }
+
+/* Ces styles sont spécifiés pour les classe "photo" et "details".*/
 
 .photo {
     display: flex;
@@ -104,6 +120,10 @@
     display: flex;
     margin-top: 2%;
 }
+
+/*Styles pour accomodation-details et ses enfants avec notamment définition de police, organisation de contenu,*
+alignement des éléments, définition de hauteur et marges pour chacun*/
+
 .accommodation-details
 {
     font-family: 'Roboto', sans-serif; 
@@ -116,7 +136,6 @@
         max-height: 2%; 
         margin-left: 10%;
     }
-    
 }
 
 .more-details
@@ -127,20 +146,20 @@
 }
 
 .listing-details-right {
-    font-family: 'Roboto', sans-serif;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 20px;
-    width: 250px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: center; 
+    font-family: 'Roboto', sans-serif; /* Définit la police de caractères. */
+    position: fixed; /* Fixe l'élément en position par rapport à la fenêtre du navigateur. */
+    bottom: 20px; /* Positionne l'élément en bas de la fenêtre avec un espacement de 20px. */
+    right: 10px; /* Positionne l'élément à droite de la fenêtre avec un espacement de 10px. */
+    background-color: #fff; /* Définit la couleur de fond en blanc. */
+    border: 1px solid #e0e0e0; /* Définit une bordure de 1px solide. */
+    border-radius: 5px; /* Arrondit les coins avec un rayon de 5px. */
+    padding: 20px; /* Ajoute un espacement intérieur de 20px. */
+    width: 250px; /* Définit la largeur à 250px. */
+    text-align: right; /* Alignement du texte à droite. */
+    display: flex; /* Organise le contenu en utilisant un modèle de boîte flexible. */
+    flex-direction: column; /* Organise le contenu en colonnes. */
+    align-items: flex-start; /* Alignement des éléments enfants en haut. */
+    justify-content: center; /* Alignement du contenu au centre. */
 }
 
 .listing-details-right h3 {
@@ -166,10 +185,10 @@
 }
 
 .price-amount {
-    font-size: 120%;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 10px;
+    font-size: 120%; /* Définit la taille de la police à 120%. */
+    font-weight: bold; /* Définit l'épaisseur du texte en gras. */
+    font-family: 'Roboto', sans-serif; /* Définit la police de caractères. */
+    margin-right: 10px; /* Marge à droite de 10px. */
 }
 
 .star-rating {
@@ -182,6 +201,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px; 
 }
+
+/* Styles pour l'élément booking-controls et ses enfants */
 
 .booking-controls {
     font-family: 'Roboto', sans-serif;
@@ -200,7 +221,6 @@
         width: 100%; 
         margin-bottom: 10px;
     }
-
 
     .guests-button{
         text-align: left;
@@ -221,8 +241,5 @@
         font-size: 16px; 
         cursor: pointer;
         width: 100%; 
-
     }
-    
-    
 }

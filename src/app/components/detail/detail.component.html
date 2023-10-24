@@ -1,50 +1,71 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-
 <div class="bodyComponent">
+    <!-- Afficher le titre en haut de page, titre à définir dans la base de donnée -->
     <div class="accommodation-title">
+        <!-- Ici on affiche uniquement l'ID de la maison renseigné dans la base donnée -->
         <h1>Maison numéro : {{accomodation.id}} </h1>
     </div>
 
     <div class="firstdetails">
         <div class="left-section">
+            <!-- Icône d'étoile avec une note -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-            <p>{{accomodation.rating}} · </p><button class="Comments" type="button">173 Commentaires · </button> <img class="Superhotes" src="../../../assets/img/médaille.png" alt="Logement" /><p>   Superhôtes · </p>
+            <p>{{accomodation.rating}} · </p>
+            <!-- Bouton "Commentaires", le nombre de comentaire est à définir dans la base de donnée -->
+            <button class="Comments" type="button">173 Commentaires · </button>
+            <!-- Icône "Superhôtes" -->
+            <img class="Superhotes" src="../../../assets/img/médaille.png" alt="Logement" />
+            <!-- Texte "Superhôtes" -->
+            <p>   Superhôtes · </p>
+            <!-- Emplacement au format : Ville, Code Postal, France -->
             <p class="location">{{accomodation.city.name}}, {{accomodation.city.zipCode}}, France</p>
         </div>
         <div class="right-section">
+            <!-- Icône "Partage" -->
             <img class="partage" src="../../../assets/img/partager.png" alt="partage" />
+            <!-- Bouton "Partager" -->
             <button class="options" type="button">Partager</button>
+            <!-- Icône "Enregistrer" -->
             <img class="save" src="../../../assets/img/enregistrer.png" alt="enregistre" />
+            <!-- Bouton "Enregistrer" -->
             <button class="options" type="button">Enregistrer</button>
         </div>
     </div>
 
     <div class="photo">
+        <!-- Image de l'hébergement depuis la base de donnée -->
         <img  class="photo" src="data:image/png;base64,{{accomodation.image}}" alt="">
     </div>
 
     <div class="accommodation-details">
+        <!-- Titre "Logement entier : chalet ⸱ Chez Victor", a personnaliser dans le futur avec une phrase dans la BDD -->
         <h2>Logement entier : chalet ⸱ Chez Victor</h2>
     </div>
     <div class="more-details">
+        <!-- Informations détaillées sur l'hébergement, a personnaliser dans le futur avec une phrase dans la BDD  -->
         <h2>2 voyageurs · 1 chambre · 1 lit · 1 salle de bain </h2>
     </div>
 </div>
 
 <div class="listing-details-right">
     <div class="price">
+        <!-- Prix par nuit, récupérer dans la Base de donnée -->
         <p><span class="price-amount">{{accomodation.price}}€ par nuit</span></p>
     </div>
     <div class="reste">
+        <!-- Icône d'étoile avec une note, récupéré sur une banque d'image -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+        <!-- Note récupéré depuis la base de donnée et nombre de commentaires -->
         <p>{{accomodation.rating}} · 173 Commentaires </p>
     </div>
 
     <div class="booking-controls">
+        <!-- Bouton "Arrivée | Départ" devra afficher un calendrier -->
         <button class="arrival-button">Arrivée | Départ </button>
+        <!-- Bouton "Voyageurs": permet de renseigner le nombre de voyageur -->
         <button class="guests-button" type="button">
             Voyageurs<br> 1 voyageur
         </button>
+        <!-- Bouton "Réserver" : permet de passer à la réservation -->
         <button class="reserve-button">Réserver</button>
     </div>
 </div>
